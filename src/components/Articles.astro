@@ -1,0 +1,104 @@
+---
+import { Image } from "astro:assets";
+import Separator from "../assets/Seperator.svg";
+import Photo1 from "../assets/photo_1.png";
+import Photo2 from "../assets/photo_2.png";
+import Photo3 from "../assets/photo_3.png";
+---
+
+<div>
+  <article>
+    <h1>We release interesting articles about technology</h1>
+    <Image src={Separator} alt="Separator" class="separator" />
+    <div class="articleContainer">
+        <article class="article">
+          <Image
+            src={Photo1}
+            alt="Power of Cloud Computing Illustration"
+            layout="constrained"
+            class="articleIMG"
+          />
+          <div>
+            <h2>
+              Unlocking the Power of Cloud Computing: A Guide to Scalable Solutions
+            </h2>
+            <p>November 12, 2024</p>
+          </div>
+        </article>
+        <article class="article">
+          <Image
+            src={Photo2}
+            alt="AI generated Illustration: transparent cubes with grass"
+            layout="constrained"
+            class="articleIMG"
+          />
+          <div>
+            <h2>
+              The Future of AI: How Machine Learning is Revolutionizing Industries
+            </h2>
+            <p>November 12, 2024</p>
+          </div>
+        </article>
+        <article class="article">
+          <Image
+            src={Photo3}
+            alt="AI generated Illustration: transparent cubes with pink neon accent color"
+            layout="constrained"
+            class="articleIMG"
+          />
+          <div>
+            <h2>
+              The Impact of 5G on Business: How Faster Networks are Transforming the Way We Work
+            </h2>
+            <p>November 12, 2024</p>
+          </div>
+        </article>
+    </div>
+  </article>
+</div>
+<style>
+  article {
+    gap: 3em;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+  .separator,
+  h1 {
+    display: flex;
+    margin: 0 auto;
+  }
+  h1 {
+    padding-top: 1em;
+    text-align: center;
+    padding-inline: clamp(1rem, 13.393vw + -3.286rem, 16rem);
+  }
+  .articleContainer{
+    gap: 2em;
+    display: grid;
+    grid-auto-flow: row;
+    margin-inline: 2em;
+  }
+  .article {
+    gap: 2em;
+    display: flex;
+    flex-direction: row;
+    h2{
+        max-width: 26em;
+    }
+  }
+  .article :global(.articleIMG) {
+    border: transparent;
+    border-radius: 16px;
+  }
+  .article :global(p) {
+    color: red;
+  }
+
+
+  @media screen and (width <= 425px) {
+    .article{
+        flex-direction: column;
+    }
+  }
+</style>

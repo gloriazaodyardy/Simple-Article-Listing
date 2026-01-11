@@ -1,3 +1,60 @@
+<h1 align="center">Simple Article Listing | devChallenges</h1>
+
+<div align="center">
+   Solution for a challenge <a href="https://devchallenges.io/challenge/simple-article-listing" target="_blank">Simple Article Listing</a> from <a href="http://devchallenges.io" target="_blank">devChallenges.io</a>.
+</div>
+
+<div align="center">
+  <h3>
+    <a href="{https://your-demo-link.your-domain}">
+      Demo
+    </a>
+    <span> | </span>
+    <a href="{https://your-url-to-the-solution}">
+      Solution
+    </a>
+    <span> | </span>
+    <a href="https://devchallenges.io/challenge/simple-article-listing">
+      Challenge
+    </a>
+  </h3>
+</div>
+
+<!-- TABLE OF CONTENTS -->
+
+## Table of Contents
+
+- [Table of Contents](#table-of-contents)
+- [Overview](#overview)
+  - [What I learned](#what-i-learned)
+  - [Built with](#built-with)
+- [Author](#author)
+
+<!-- OVERVIEW -->
+
+## Overview
+
+![screenshot](/public/thumbnail.jpg)
+
+### What I learned
+
+I learned how to use Astro for the first time and tried to implement it in this challenge.
+
+### Built with
+
+- Semantic HTML5 markup
+- Flexbox
+- CSS Grid
+- CSS Function
+- [Astro](https://astro.build/)
+
+This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges-dashboard) challenge.
+
+## Author
+- GitHub [@gloriazaodyardy](https://{github.com/gloriazaodyardy})
+
+---
+
 # Astro Starter Kit: Basics
 
 ```sh
@@ -8,25 +65,32 @@ npm create astro@latest -- --template basics
 
 ## 🚀 Project Structure
 
-Inside of your Astro project, you'll see the following folders and files:
+Inside of this project, you'll see the following folders and files:
 
 ```text
 /
 ├── public/
-│   └── favicon.svg
+|   └── favicon.ico
+|   └── Poppins-Medium.ttf
+|   └── Poppins-SemiBold.ttf
+│   └── thumbnail.jpg
 ├── src
 │   ├── assets
-│   │   └── astro.svg
+|   |   └── photo_1.png
+|   |   └── photo_1@2x.png
+|   |   └── photo_2.png
+|   |   └── photo_2@2x.png
+|   |   └── photo_3.png
+|   |   └── photo_3@2x.png
+|   |   └── Separator.svg
 │   ├── components
-│   │   └── Welcome.astro
+│   │   └── Articles.astro
 │   ├── layouts
 │   │   └── Layout.astro
 │   └── pages
 │       └── index.astro
 └── package.json
 ```
-
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
 
 ## 🧞 Commands
 
@@ -40,7 +104,3 @@ All commands are run from the root of the project, from a terminal:
 | `npm run preview`         | Preview your build locally, before deploying     |
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
