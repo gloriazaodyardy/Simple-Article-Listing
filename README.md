@@ -61,8 +61,6 @@ This application/site was created as a submission to a [DevChallenges](https://d
 npm create astro@latest -- --template basics
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
 ## 🚀 Project Structure
 
 Inside of this project, you'll see the following folders and files:
